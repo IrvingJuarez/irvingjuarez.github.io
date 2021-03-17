@@ -1,0 +1,215 @@
+/* 
+    Oswald: Light 300 & Regular 400
+    Open-sans: Light 300 & Extra-bold 800
+
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+ */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(-45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 37%, rgba(0,212,255,1) 100%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 30px 0;
+
+    /* border: 1px solid white; */
+}
+.header__text{
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+.header__text h2{
+    display: inline-block;
+    padding: 0 5px;
+    font-weight: 800;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+}
+.header__text p{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.header-logo{
+   width: 100px;
+   height: 100px;
+   background-image: url('./assets/iconos/new_isotipo.svg');
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin: 10px 0;
+
+   /* border: 1px solid white; */
+}
+main{
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+
+    /* border: 1px solid white; */
+}
+main section{
+    display: flex;
+    height: 290px;
+    width: auto;
+    max-width: 648px;
+    margin: 0 auto 30px auto;
+    padding: 15px 0;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+main section::-webkit-scrollbar {
+    background-color: rgba(220, 220, 220, 0.5);
+    height: 3px;
+}
+main section::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+.graph-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+    width: 50%;
+    min-width: 188px;
+    max-width: 200px;
+    height: 257px;
+    margin: 0 8px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8 px rgba(89, 73, 30, 0.16);
+    text-align: center;
+
+    background-color: rgba(2,0,36,0.5);
+}
+.metrics{
+    width: 100px;
+    height: 100px;
+}
+.metrics svg{
+    width: 100px;
+    height: 100px;
+}
+.metrics svg circle{
+    width: 100px;
+    height: 100px;
+    fill: none;
+    stroke-width: 10px;
+    transform: translate(5px, 5px);
+    /* stroke-dashoffset: 440; */
+}
+.metrics svg circle:first-child{
+    stroke-dasharray: 280;
+    stroke: rgba(220, 220, 220, 0.5);
+}
+.css circle:nth-child(2){
+    stroke-dasharray: calc( (67*280) / 100 );
+    stroke: blue;
+    stroke-linecap: round;
+}
+.html circle:nth-child(2){
+    stroke-dasharray: calc( (73*280) / 100 );
+    stroke: red;
+    stroke-linecap: round;
+}
+.js circle:nth-child(2){
+    stroke-dasharray: calc( (58*280) / 100 );
+    stroke: yellow;
+    stroke-linecap: round;
+}
+article h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 2.1rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    padding-top: 15px;
+}
+.percentage{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 75px;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+
+    /* border: 1px solid white; */
+}
+.percentage h2{
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    padding: 0;
+}
+.percentage span{
+    font-size: 1.8rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgba(7, 7, 92, 0.7);
+}
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+    height: auto;
+    margin: 50px 0 30px 0;
+    
+    /* border: 1px solid white; */
+}
+footer div a{
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* border: 1px solid white; */
+}
+.twitter{
+    background-image: url('./assets/iconos/twitter.svg');
+}
+.linkedin{
+    background-image: url('./assets/iconos/linkedin.svg');
+}
+.github{
+    border-radius: 16px;
+    background-color: white;
+    background-image: url('./assets/iconos/github.svg');
+}
