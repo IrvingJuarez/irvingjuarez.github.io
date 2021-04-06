@@ -1,0 +1,15 @@
+.header-button{
+    display: none;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-evenly;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.header-nav a{
+    padding: 0 10px;
+    text-decoration: none;
+}
