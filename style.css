@@ -14,12 +14,13 @@ font-family: 'PT Sans', sans-serif;
     --mainColor: #dcdfe6;
     --secondaryColor: #002FFF;
     --outerNeomorph: 5px 5px 9px rgb(99, 99, 99), -5px -5px 9px white;
-    --innerNeomorph: inset -2px -2px 9px white, inset 2px 2px 9px rgb(99, 99, 99);
+    --innerNeomorph: inset -5px -5px 9px white, inset 5px 5px 9px rgb(99, 99, 99);
     --titleFont: 'PT Sans', sans-serif;
     --textFont: 'Noto Sans', sans-serif;
 }
 html{
     font-size: 62.5%;
+    background-color: var(--mainColor);
 }
 header{
     position: relative;
@@ -344,4 +345,92 @@ main{
 }
 #css{
     background-image: url('./assets/icons/css-3.svg');
+}
+.goalsContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    min-width: 290px;
+    max-width: 520px;
+    height: auto;
+    padding: 10px;
+    margin: 9px auto;
+}
+.goalsContainer article{
+    flex: 0 0 auto;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 210px;
+    height: 200px;
+    margin: 0 10px;
+    padding: 30px;
+
+    font-family: var(--textFont);
+    font-weight: 400;
+    font-size: 1.6rem;
+    white-space: initial;
+
+    box-shadow: var(--outerNeomorph);
+    border-radius: 15px;
+}
+.goalsContainer article span{
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 100%;
+    box-shadow: var(--innerNeomorph);
+}
+.goalAi{
+    background-image: url('./assets/icons/ai.svg');
+}
+.goalDb{
+    background-image: url('./assets/icons/database.svg');
+}
+.goalFullstack{
+    background-image: url('./assets/icons/code.svg');
+}
+.goalDScience{
+    background-image: url('./assets/icons/data.svg');
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin: 15px auto;
+    padding-top: 30px;
+
+    font-family: var(--titleFont);
+    font-weight: 400;
+    font-size: 2.1rem;
+
+    border-top: 2px solid;
+}
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin: 15px 0;
+
+    /* border: 1px solid var(--secondaryColor); */
+}
+.footerContainer div{
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+
+    border-radius: 100%;
+    box-shadow: var(--innerNeomorph);
 }

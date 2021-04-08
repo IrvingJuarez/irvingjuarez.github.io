@@ -13,3 +13,11 @@
     padding: 0 10px;
     text-decoration: none;
 }
+.goalsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.goalsContainer article{
+    margin: 15px 15px;
+}
