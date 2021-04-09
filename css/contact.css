@@ -1,0 +1,69 @@
+:root{
+    --mainColor: #dcdfe6;
+    --secondaryColor: #002FFF;
+    --outerNeomorph: 5px 5px 9px rgb(99, 99, 99), -5px -5px 9px white;
+    --innerNeomorph: inset -5px -5px 9px white, inset 5px 5px 9px rgb(99, 99, 99);
+    --titleFont: 'PT Sans', sans-serif;
+    --textFont: 'Noto Sans', sans-serif;
+}
+
+.contact{
+    width: 80%;
+    min-width: 256px;
+    max-width: 500px;
+    height: 50vh;
+    padding: 20px;
+    margin: 0 auto;
+
+    font-family: var(--titleFont);
+    font-weight: 400;
+    font-size: 1.7rem;
+
+    box-shadow: var(--outerNeomorph), var(--innerNeomorph);
+}
+.contact div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    padding: 5px;
+    margin: 10px auto;
+
+    font-size: 1.4rem;
+
+    /* border: 1px solid var(--secondaryColor); */
+}
+.contact div a{
+    display: inline-flex;
+    align-items: center;
+    margin: 15px 0;
+
+    text-decoration: none;
+    color: black;
+}
+.contact div a span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 100%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-shadow: var(--innerNeomorph);
+}
+/* #linkedin{
+
+} */
+#twitter{
+    background-image: url('../assets/icons/twitter.svg');
+}
+#email{
+    background-image: url('../assets/icons/tinyLetter.svg');
+}
+#linkedin{
+    background-image: url('../assets/icons/linkedin.svg');
+}

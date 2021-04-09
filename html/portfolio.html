@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="stylesheet" href="../css/desktop.css" media="(min-width: 550px)">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/icons/icon.svg">
+</head>
+<body>
+    <header>
+        <div class="header-div">
+            IRVING <span>JUAREZ</span>
+        </div>
+        <nav class="header-nav">
+            <a href="../index.html">Home</a>
+            <a href="https://irvingjuarez.hashnode.dev/" target="_blank" rel="noopener noreferrer">Blog</a>
+            <a href="./html/portfolio.html">Portfolio</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <button class="header-button" id="header-button" onclick="displayFloatNav()">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+        </button>
+        <section class="header__float-nav" id="header__float-nav">
+            <a href="../index.html">Home <span class="home-icon"></span></a>
+            <a href="https://irvingjuarez.hashnode.dev/" target="_blank" rel="noopener noreferrer">Blog <span class="blog-icon"></span></a>
+            <a href="./html/portfolio.html">Portfolio <span class="portfolio-icon"></span></a>
+            <a href="./contact.html">Contact <span class="contact-icon"></span></a>
+        </section>
+    </header>
+    <main>
+        <section class="portfolio">
+            <section class="portfolio-section">
+                <article class="portfolio-section__title">
+                    HTML & CSS only. <span id="firstArrow" onclick="down(this.id)"></span>
+                </article>
+                <article class="portfolio-section__content" id="firstArticle">
+                    <div class="card">
+                        <div class="travels"></div>
+                        <div>
+                            <a href="https://github.com/IrvingJuarez/Travels" target="_blank" rel="noopener noreferrer">Repository</a>
+                            <a href="https://irvingjuarez.github.io/Travels/" target="_blank" rel="noopener noreferrer">Online</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="architexture"></div>
+                        <div>
+                            <a href="https://github.com/IrvingJuarez/Architexture" target="_blank" rel="noopener noreferrer">Repository</a>
+                            <a href="https://irvingjuarez.github.io/Architexture/" target="_blank" rel="noopener noreferrer">Online</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="portfolio-section">
+                <article class="portfolio-section__title">
+                    Videogames with html, css & js. <span id="secondArrow" onclick="down(this.id)"></span>
+                </article>
+                <article class="portfolio-section__content" id="secondArticle">
+                    <div class="card">
+                        <div class="simonSays"></div>
+                        <div>
+                            <a href="https://github.com/IrvingJuarez/Simon-says" target="_blank" rel="noopener noreferrer">Repository</a>
+                            <a href="https://irvingjuarez.github.io/Simon-says/" target="_blank" rel="noopener noreferrer">Online</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        Made with 💙 by Irving Juárez
+        <div class="footerContainer">
+            <a href="https://twitter.com/juarez1_irving" class="twitter" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://github.com/IrvingJuarez" class="github" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+    </footer>
+
+    <script src="../js/portfolio.js"></script>
+    <script src="../index.js"></script>
+</body>
+</html>

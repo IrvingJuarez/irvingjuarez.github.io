@@ -22,6 +22,9 @@ html{
     font-size: 62.5%;
     background-color: var(--mainColor);
 }
+main{
+    min-height: 100vh;
+}
 header{
     position: relative;
     display: flex;
@@ -85,6 +88,8 @@ header{
     background-color: var(--mainColor);
     border-radius: 20px;
     box-shadow: var(--outerNeomorph);
+
+    z-index: 2;
 }
 .header__float-nav a{
     display: flex;
@@ -412,7 +417,7 @@ footer{
 
     font-family: var(--titleFont);
     font-weight: 400;
-    font-size: 2.1rem;
+    font-size: 1.6rem;
 
     border-top: 2px solid;
 }
@@ -426,11 +431,21 @@ footer{
 
     /* border: 1px solid var(--secondaryColor); */
 }
-.footerContainer div{
+.footerContainer a{
     width: 40px;
     height: 40px;
     margin: 0 15px;
 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     border-radius: 100%;
     box-shadow: var(--innerNeomorph);
+}
+.twitter{
+    background-image: url('./assets/icons/twitter.svg');
+}
+.github{
+    background-image: url('./assets/icons/github-big-logo.svg');
 }

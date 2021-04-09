@@ -1,0 +1,136 @@
+:root{
+    --mainColor: #dcdfe6;
+    --secondaryColor: #002FFF;
+    --outerNeomorph: 5px 5px 9px rgb(99, 99, 99), -5px -5px 9px white;
+    --innerNeomorph: inset -2px -2px 9px white, inset 2px 2px 9px rgb(99, 99, 99);
+    --titleFont: 'PT Sans', sans-serif;
+    --textFont: 'Noto Sans', sans-serif;
+}
+
+.portfolio{
+    width: 90%;
+    min-height: 100vh;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.portfolio-section{
+    width: 100%;
+    height: auto;
+}
+.portfolio-section__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    padding: 10px;
+    
+    font-family: var(--textFont);
+    font-weight: 400;
+    font-size: 1.5rem;
+    
+    border-radius: 15px;
+    box-shadow: var(--outerNeomorph);
+}
+.portfolio-section__title span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/icons/arrowDown.svg');
+    
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
+.portfolio-section__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 210px;
+    max-width: 785px;
+    margin: 0 auto 15px auto;
+
+    border: 2px solid #c6c9d1;
+    border-radius: 15px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 240px;
+    height: 200px;
+    padding: 5px;
+    margin: 10px 10px;
+
+    box-shadow: var(--outerNeomorph);
+    border-radius: 15px;
+}
+.card div{
+    width: 95%;
+
+    /* border-radius: inherit; */
+}
+.portfolio-section__content .card div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78%;
+
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: var(--titleFont);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--mainColor);
+
+    background-color: rgba(0, 47, 255, 0.9);
+    border-radius: 15px 15px 0 0;
+}
+.card div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18%;
+}
+.card div:nth-child(2) a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    text-decoration: none;
+
+    font-family: var(--titleFont);
+    font-weight: 400;
+    font-size: 1.3rem;
+
+    border: none;
+    background-color: var(--mainColor);
+    box-shadow: var(--innerNeomorph);
+}
+.travels{
+    background-image: url('../assets/images/travels.JPG');
+}
+.architexture{
+    background-image: url('../assets/images/architexture.JPG');
+}
+.simonSays{
+    background-image: url('../assets/images/simonsays.JPG');
+}
+
+
+@media (min-width: 968px){
+    .portfolio-section__content{
+        justify-content: flex-start;       
+    }
+}
