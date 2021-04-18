@@ -127,6 +127,9 @@
 .simonSays{
     background-image: url('../assets/images/simonsays.JPG');
 }
+.tetris{
+    background-image: url('../assets/images/tetris.jpg');
+}
 
 
 @media (min-width: 968px){
