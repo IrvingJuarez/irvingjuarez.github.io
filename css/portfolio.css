@@ -61,6 +61,7 @@
     border-radius: 15px;
 }
 .card{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,36 +74,23 @@
     box-shadow: var(--outerNeomorph);
     border-radius: 15px;
 }
-.card div{
+.card img{
     width: 95%;
-
-    /* border-radius: inherit; */
+    height: 100%;
 }
-.portfolio-section__content .card div:nth-child(1){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 78%;
-
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    font-family: var(--titleFont);
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--mainColor);
-
-    background-color: rgba(0, 47, 255, 0.9);
-    border-radius: 15px 15px 0 0;
-}
-.card div:nth-child(2){
+.card div{
+    position: absolute;
+    left: 2.5%;
+    bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 95%;
     height: 18%;
+
+    background-color: var(--mainColor);
 }
-.card div:nth-child(2) a{
+.card div a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,18 +105,6 @@
     border: none;
     background-color: var(--mainColor);
     box-shadow: var(--innerNeomorph);
-}
-.travels{
-    background-image: url('../assets/images/travels.JPG');
-}
-.architexture{
-    background-image: url('../assets/images/architexture.JPG');
-}
-.simonSays{
-    background-image: url('../assets/images/simonsays.JPG');
-}
-.tetris{
-    background-image: url('../assets/images/tetris.jpg');
 }
 
 
