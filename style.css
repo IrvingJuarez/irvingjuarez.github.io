@@ -157,7 +157,7 @@ hr{
     display: inline-block;
     width: 90%;
     height: 98%;
-    margin: 0 8px;
+    margin: 0 5px;
     padding-top: 17px;
     border-radius: 15px;
 
@@ -179,6 +179,7 @@ hr{
 .right-arrow{
     left: calc(100% - 30px);
     background-image: url("./assets/icons/arrow.svg");
+    display: none;
 }
 .left-arrow{
     left: 2px;
@@ -247,4 +248,10 @@ footer{
     font-size: 1.3rem;
 
     border-top: 1px solid #616161;
+}
+
+@media (min-width: 500px){
+    .right-arrow{
+        display: initial;
+    }
 }
